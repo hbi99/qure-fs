@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-	readdirWorker: function(path, list) {
+	readdir: function(path, list) {
 		var that = this;
 
 		// prerequisites
@@ -16,12 +16,12 @@ module.exports = {
 		this.pause(true);
 		
 		// make async call
-		this.walkWorker(path, function(err, list) {
+		this.walk(path, function(err, list) {
 			// resume queue
 			that.resume(list);
 		});
 	},
-	walkWorker: function(path, callback, level) {
+	walk: function(path, callback, level) {
 		var that = this,
 			results = [],
 			fs = this.fs,
@@ -39,7 +39,7 @@ module.exports = {
 							if (!--pending) callback(null, results);
 							return;
 						}
-						that.walkWorker(file, function(err, res) {
+						that.walk(file, function(err, res) {
 							results = results.concat(res);
 							if (!--pending) callback(null, results);
 						});
