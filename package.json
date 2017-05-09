@@ -1,6 +1,6 @@
 {
   "name": "qure-fs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Filesystem wrapper for QureJS",
   "main": "index.js",
   "scripts": {
