@@ -1,0 +1,106 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.0.5
+3 info using node@v0.12.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/hbi/Documents/proj/github/qure-fs',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/hbi/.npm/qure-fs/1.0.4/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/hbi/.npm correctMkdir not in flight; initializing
+10 info lifecycle qure-fs@1.0.4~prepublish: qure-fs@1.0.4
+11 silly lifecycle qure-fs@1.0.4~prepublish: no script for prepublish, continuing
+12 info lifecycle qure-fs@1.0.4~prepare: qure-fs@1.0.4
+13 silly lifecycle qure-fs@1.0.4~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/hbi/.npm/qure-fs/1.0.4/package.tgz',
+14 verbose tar pack   '/Users/hbi/Documents/proj/github/qure-fs' ]
+15 verbose tarball /Users/hbi/.npm/qure-fs/1.0.4/package.tgz
+16 verbose folder /Users/hbi/Documents/proj/github/qure-fs
+17 verbose addLocalTarball adding from inside cache /Users/hbi/.npm/qure-fs/1.0.4/package.tgz
+18 verbose correctMkdir /Users/hbi/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd qure-fs@1.0.4
+20 verbose afterAdd /Users/hbi/.npm/qure-fs/1.0.4/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/hbi/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/hbi/.npm/qure-fs/1.0.4/package/package.json written
+23 silly publish { name: 'qure-fs',
+23 silly publish   version: '1.0.4',
+23 silly publish   description: 'Filesystem wrapper for QureJS',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+23 silly publish   repository: { type: 'git', url: 'git+https://github.com/hbi99/qure-fs.git' },
+23 silly publish   author: { name: 'Hakan Bilgin', email: 'hbi@longscript.com' },
+23 silly publish   license: 'MIT',
+23 silly publish   bugs: { url: 'https://github.com/hbi99/qure-fs/issues' },
+23 silly publish   homepage: 'https://github.com/hbi99/qure-fs#readme',
+23 silly publish   readme: 'A QureFS wrapper for filesystem API.\n\n#### Usage\n\n#### Install\n\n```bash\n$ npm install qure-fs --save\n```\n\n#### Example\n\n## LICENSE\n\n(MIT License)\n\nSee the LICENSE file for details',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: '0c7fc93b91e9f2f94a497c556a6f953e59c58eee',
+23 silly publish   _id: 'qure-fs@1.0.4',
+23 silly publish   _shasum: '4a96c643bfc617e5475b2816a86cd5488ee18d69',
+23 silly publish   _from: '.' }
+24 info lifecycle qure-fs@1.0.4~prepublishOnly: qure-fs@1.0.4
+25 silly lifecycle qure-fs@1.0.4~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name qure-fs
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data { raw: 'qure-fs',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'qure-fs',
+30 silly mapToRegistry   name: 'qure-fs',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/qure-fs
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/hbi/.npm/qure-fs/1.0.4/package.tgz
+34 verbose request uri https://registry.npmjs.org/qure-fs
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 9:55:29 AM
+37 verbose request using bearer token for auth
+38 verbose request id c66282f2b3470d12
+39 http request PUT https://registry.npmjs.org/qure-fs
+40 http 403 https://registry.npmjs.org/qure-fs
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Tue, 09 May 2017 07:55:30 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-bma7029-BMA',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1494316530.816456,VS0,VE1077',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /Users/hbi/.npm/registry.npmjs.org/qure-fs on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 1.0.4." : qure-fs
+44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+44 verbose stack     at Request.emit (events.js:110:17)
+44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+44 verbose stack     at Request.emit (events.js:107:17)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+44 verbose stack     at IncomingMessage.g (events.js:199:16)
+44 verbose stack     at IncomingMessage.emit (events.js:129:20)
+45 verbose statusCode 403
+46 verbose pkgid qure-fs
+47 verbose cwd /Users/hbi/Documents/proj/github/qure-fs
+48 error Darwin 16.4.0
+49 error argv "node" "/usr/local/bin/npm" "publish"
+50 error node v0.12.4
+51 error npm  v4.0.5
+52 error code E403
+53 error "You cannot publish over the previously published version 1.0.4." : qure-fs
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
